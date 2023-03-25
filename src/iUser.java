@@ -1,0 +1,4 @@
+interface iUser {
+    
+    String getName();
+} 

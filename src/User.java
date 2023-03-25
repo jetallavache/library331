@@ -1,4 +1,4 @@
-public class User {
+public class User implements iUser {
     private String name;
 
     public String getName() {

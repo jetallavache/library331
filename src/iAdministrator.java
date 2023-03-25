@@ -1,5 +1,5 @@
-interface iAdministrator<T extends User> {
-    void overdueNotification(Reader reader); // уведомить о времени возврата
-    void findBook(Book book); // найти книгу
+interface iAdministrator extends iUser {
 
+    void overdueNotification(iReader reader, Book book); // уведомить о времени возврата
+    void findBook(iReader reader, Book book); // найти книгу
 }

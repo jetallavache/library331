@@ -1,3 +1,4 @@
-interface iLibrarian<T extends User> {
-    void orderBook(Book book); // заказать книгу
+interface iLibrarian extends iUser {
+    
+    void orderBook(iSupplier supplier, Book book); // заказать книгу
 }

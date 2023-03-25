@@ -1,6 +1,7 @@
-public class Supplier extends User implements iSupplier<Supplier> {
+public class Supplier extends User implements iSupplier {
+
     @Override
-    public void bringBook(Book book) {
+    public void bringBook(iLibrarian librarian, Book book) {
         System.out.println(" <приносит книгу \"" + book.getName() + "\"> ");
     }
 }

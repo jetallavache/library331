@@ -1,3 +1,4 @@
-interface iSupplier<T extends User> {
-    void bringBook(Book book); // принести книгу
+interface iSupplier extends iUser {
+
+    void bringBook(iLibrarian librarian, Book book); // принести книгу
 }

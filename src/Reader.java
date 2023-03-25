@@ -1,12 +1,12 @@
-public class Reader extends User implements iReader<Reader> {
+public class Reader extends User implements iReader {
+
     @Override
-    public void takeBook(Book book) {
+    public void takeBook(iLibrarian librarian, Book book) {
         System.out.println(" <берет книгу \"" + book.getName() + "\"> ");
     }
 
     @Override
-    public void returnBook(Book book) {
+    public void returnBook(iLibrarian librarian, Book book) {
         System.out.println(" <возвращает книгу \"" + book.getName() + "\"> ");
     }
-
 }

@@ -1,4 +1,5 @@
-interface iReader<T extends User> {
-    void takeBook(Book book); // взять книгу
-    void returnBook(Book book); // вернуть книгу
+interface iReader extends iUser {
+    
+    void takeBook(iLibrarian librarian, Book book); // взять книгу
+    void returnBook(iLibrarian librarian, Book book); // вернуть книгу
 }

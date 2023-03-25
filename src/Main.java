@@ -5,7 +5,7 @@ public class Main {
         book1.setName("The Green Mile");
 
         Book book2 = new Book();
-        book1.setName("Pet Sematary");
+        book2.setName("Pet Sematary");
 
         Reader reader1 = new Reader();
         reader1.setName("Bay");
