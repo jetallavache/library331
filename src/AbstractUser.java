@@ -1,6 +1,8 @@
-public class User {
+public class AbstractUser implements iUser {
+
     private String name;
 
+    @Override
     public String getName() {
         return name;
     }

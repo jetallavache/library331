@@ -1,6 +1,8 @@
-public class Librarian extends User implements iLibrarian<Librarian> {
+public class Librarian extends AbstractUser implements iLibrarian {
+
     @Override
-    public void orderBook(Book book) {
-        System.out.println(" <заказывает книгу \"" + book.getName() + "\"> ");
+    public void orderBook(iSupplier supplier, Book book) {
+        System.out.printf("Библиотекарь %s заказывает книгу %s у поставщика %s%n",
+                this.getName(), book.getName(), supplier.getName());
     }
 }
